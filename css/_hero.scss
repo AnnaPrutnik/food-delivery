@@ -1,0 +1,64 @@
+.hero {
+  height: calc(100vh - 120px);
+  background-image: url('../images/hero/phone.png'),
+    url('../images/hero/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 70% 70%, right;
+  padding: 0px 109px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    max-width: 586px;
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__main {
+    font-size: 62px;
+    line-height: 1.161;
+    color: $title-text-color;
+    margin-bottom: 16px;
+  }
+
+  &__buttons {
+    margin-bottom: 60px;
+  }
+
+  &__line {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-size: 18px;
+    line-height: 1.111;
+  }
+
+  &__counts {
+    font-size: 56px;
+    line-height: 1.179;
+    color: $dark-bg-color;
+    font-weight: 700;
+
+    &_red {
+      color: $active-font-color;
+      font-weight: 400;
+    }
+  }
+}

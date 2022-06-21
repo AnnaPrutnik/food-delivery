@@ -1,0 +1,21 @@
+.clients {
+  padding: 140px 109px;
+  text-align: center;
+
+  &__title {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 48px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: block;
+    height: 45px;
+  }
+}

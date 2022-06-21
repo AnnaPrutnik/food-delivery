@@ -1,0 +1,62 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 2.5;
+  color: $main-text-color;
+}
+
+.container {
+  padding: 200px 109px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.button {
+  height: 56px;
+  border-radius: 12px;
+  padding: 0 39px;
+  font-size: 16px;
+  line-height: 1.125;
+  text-align: center;
+}
+
+.download {
+  background: $main-bg-color;
+  border: 1px solid $button-border-color;
+  box-shadow: 0px 2px 6px $button-box-shadow;
+  margin-left: 15px;
+}
+
+.register {
+  background-color: $button-bg-color;
+  border: 1px solid $button-bg-color;
+  color: $button-text-color;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.111;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  color: $active-font-color;
+  font-weight: 400;
+}
+.title {
+  font-size: 44px;
+  line-height: 1.227;
+
+  color: $title-text-color;
+}
+
+.line {
+  @extend .container;
+  padding: 0 109px;
+
+  &__body {
+    margin: 0 auto;
+    width: 1222px;
+    height: 1px;
+    background-color: $bg-color-line;
+  }
+}

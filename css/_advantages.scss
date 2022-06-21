@@ -1,0 +1,56 @@
+.advantages {
+  &__content {
+    margin-bottom: 80px;
+    display: flex;
+  }
+
+  &__text {
+    width: calc(50% - 28px);
+    margin-right: 28px;
+  }
+
+  &__images {
+    height: 684px;
+    width: calc(50% - 28px);
+    background-image: url('../images/advantages/bg-big.jpg'),
+      url('../images/advantages/bg-phone.jpg');
+    background-repeat: no-repeat;
+    background-position: right, 0 40px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr;
+    gap: 48px;
+    margin-top: 33px;
+  }
+
+  &__item {
+    min-height: 176px;
+    font-size: 14px;
+  }
+  &__name {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.27;
+    color: $title-text-color;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67%;
+    position: relative;
+    top: 0;
+    left: 35%;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
