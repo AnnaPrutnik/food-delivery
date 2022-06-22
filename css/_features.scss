@@ -1,0 +1,38 @@
+.features {
+  text-align: center;
+  &__subtitle {
+    margin-bottom: 7px;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__list {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr;
+    row-gap: 85px;
+    column-gap: 80px;
+  }
+  &__item {
+    max-width: 350px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  &__image {
+    margin-bottom: 24px;
+  }
+
+  &__header {
+    margin-bottom: 21px;
+
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: $title-text-color;
+  }
+}

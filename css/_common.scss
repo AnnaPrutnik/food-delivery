@@ -2,13 +2,12 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  line-height: 2.5;
+  line-height: 30px;
   color: $main-text-color;
 }
 
 .container {
   padding: 200px 109px;
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -17,7 +16,7 @@ body {
   border-radius: 12px;
   padding: 0 39px;
   font-size: 16px;
-  line-height: 1.125;
+  line-height: 20px;
   text-align: center;
 }
 
@@ -36,16 +35,15 @@ body {
 
 .subtitle {
   font-size: 18px;
-  line-height: 1.111;
-  letter-spacing: 1.08px;
+  line-height: 20px;
+  letter-spacing: 1.08;
   text-transform: uppercase;
   color: $active-font-color;
   font-weight: 400;
 }
 .title {
   font-size: 44px;
-  line-height: 1.227;
-
+  line-height: 54px;
   color: $title-text-color;
 }
 
@@ -58,5 +56,9 @@ body {
     width: 1222px;
     height: 1px;
     background-color: $bg-color-line;
+
+    &-grey {
+      background-color: $button-border-color;
+    }
   }
 }

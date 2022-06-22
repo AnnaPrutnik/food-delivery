@@ -29,5 +29,26 @@
   &__images {
     width: calc(50% - 28px);
     position: absolute;
+    right: 0;
+    top: 0;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 323px;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  &__item:not(last-child) {
+    display: block;
+    margin-bottom: 30px;
   }
 }

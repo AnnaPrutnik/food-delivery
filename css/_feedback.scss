@@ -1,0 +1,80 @@
+.feedback {
+  background-color: $secondary-bg-color;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 48px;
+  }
+
+  &__wrapper {
+    max-width: 490px;
+  }
+
+  &__title {
+    font-weight: 400;
+    margin-bottom: 22px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template: 1fr 1fr /1fr 1fr 1fr;
+    gap: 28px;
+  }
+
+  &__item {
+    padding: 40px 33px;
+    min-height: 268px;
+    background: $main-bg-color;
+    border: 1px solid $button-border-color;
+    box-shadow: 0px 2px 12px $box-shadow-cards;
+    border-radius: 24px;
+    padding: 40px 33px;
+    min-height: 268px;
+  }
+
+  &__person {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__data {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    display: block;
+    margin-right: 10px;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+
+    color: $title-text-color;
+    margin-bottom: 6px;
+  }
+
+  &__place {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: $active-font-color;
+  }
+
+  &__sign {
+    width: 36px;
+    height: 36px;
+    background: $sign-bg-color;
+    border-radius: 8px;
+  }
+
+  &__text {
+    font-size: 18px;
+  }
+}

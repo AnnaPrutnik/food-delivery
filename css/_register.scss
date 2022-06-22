@@ -1,0 +1,48 @@
+.registration {
+  background-color: $secondary-bg-color;
+  padding-top: 131px;
+  position: relative;
+
+  &__content {
+    padding: 179px 109px 176px 109px;
+    background-color: $dark-bg-color;
+    color: $secondary-text-color;
+  }
+
+  &__title {
+    color: inherit;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    max-width: 540px;
+    margin-bottom: 33px;
+  }
+
+  &__button {
+    height: 72px;
+  }
+
+  &__bg2 {
+    position: absolute;
+    width: 480px;
+    height: 730px;
+    top: 40px;
+    left: 940px;
+    background-image: url('../images/registration/phone2.png');
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &__bg1 {
+    position: absolute;
+    width: 480px;
+    height: 700px;
+    top: 60px;
+    left: 687px;
+    background-image: url('../images/registration/phone1.png');
+    background-repeat: no-repeat;
+    z-index: 10;
+  }
+}
