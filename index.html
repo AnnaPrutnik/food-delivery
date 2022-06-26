@@ -3,746 +3,776 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1'" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Deliver X</title>
   </head>
   <body>
-    <header class="header">
-      <a href="/" class="header__logo">
-        <img src="./images/header/logo.svg" alt="logo" />
-      </a>
-      <div class="header__wrapper">
-        <nav class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item menu__item_active">
-              <a href="/" class="menu__link">Home</a>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__content">
+          <a href="#" class="header__logo">
+            <svg class="logo">
+              <use href="./images/sprite/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <button class="burger">
+            <svg class="burger__icon">
+              <use href="./images/sprite/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="header__wrapper">
+            <nav class="header__menu menu">
+              <button class="menu__close">
+                <svg class="menu__icon">
+                  <use href="./images/sprite/icons.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__item menu__item_active">
+                  <a href="/" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Pricing</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Pages</a>
+                </li>
+                <li class="menu__item menu__item-cart">
+                  <a href="#" class="menu__link">Cart(0)</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="buttons-wrap">
+              <button class="header__button download button">
+                Download app
+              </button>
+              <button class="header__button register button">Resister</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="hero">
+          <div class="container">
+            <div class="hero__wrapper">
+              <div class="hero__text">
+                <h2 class="hero__subtitle subtitle">Food Delivery Service</h2>
+                <h1 class="hero__title">Delicious food at your fingertips</h1>
+                <p>
+                  A ultricies eget condimentum sed faucibus enim maecenas
+                  variusd dolor sitegestas hendrerit et maecenas habitant mattis
+                </p>
+              </div>
+              <div class="hero__buttons buttons-wrap">
+                <button class="register button">Register restaurant</button>
+                <button class="download button">Download app</button>
+              </div>
+              <div class="hero__line"></div>
+              <ul class="hero__list">
+                <li class="hero__item">
+                  <p class="hero__counts">
+                    10M<span class="hero__counts_red">+</span>
+                  </p>
+                  <p>Happy customers</p>
+                </li>
+                <li class="hero__item">
+                  <p class="hero__counts">
+                    500k<span class="hero__counts_red">+</span>
+                  </p>
+                  <p>Restaurants available</p>
+                </li>
+                <li class="hero__item">
+                  <p class="hero__counts">
+                    10M<span class="hero__counts_red">+</span>
+                  </p>
+                  <p>Successful deliveries</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="clients container">
+          <h3 class="clients__title">
+            Trusted by 5,000+ restaurants around the world
+          </h3>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <img src="./images/clients/1.svg" alt="" />
+              </a>
             </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">About</a>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <img src="./images/clients/2.svg" alt="" />
+              </a>
             </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Pricing</a>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <img src="./images/clients/3.svg" alt="" />
+              </a>
             </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Pages</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Cart(0)</a>
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <img src="./images/clients/4.svg" alt="" />
+              </a>
             </li>
           </ul>
-        </nav>
-        <div>
-          <button class="header__button download button">Download app</button>
-          <button class="header__button register button">Resister</button>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="hero">
-        <div class="hero__wrapper">
-          <div class="hero__text">
-            <h2 class="hero__title subtitle">Food Delivery Service</h2>
-            <h1 class="hero__main">Delicious food at your fingertips</h1>
+        </div> -->
+
+        <!-- <div class="line">
+          <div class="line__body"></div>
+        </div> -->
+
+        <!-- <div class="benefits container">
+          <div class="benefits__header">
+            <h3 class="benefits__subtitle subtitle">How it works</h3>
+            <h2 class="benefits__title title">
+              Our simple, yet efficient <br />delivery system
+            </h2>
             <p>
-              A ultricies eget condimentum sed faucibus enim maecenas variusd
-              dolor sitegestas hendrerit et maecenas habitant mattis
+              Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+              egestas morbi sem vulputate etiam facilisis pellentesque
             </p>
           </div>
-          <div class="hero__buttons">
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <img
+                src="./images/benefits/phone.svg"
+                alt="phone"
+                class="benefits__img"
+              />
+              <h4 class="benefits__desc">
+                1. Create a free account at Deliver X today
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam
+              </p>
+            </li>
+            <li class="benefits__item">
+              <img
+                src="./images/benefits/home.svg"
+                alt="home"
+                class="benefits__img"
+              />
+              <h4 class="benefits__desc">
+                2. Order from your favorite restaurant
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam
+              </p>
+            </li>
+            <li class="benefits__item">
+              <img
+                src="./images/benefits/deliver.svg"
+                alt="bike"
+                class="benefits__img"
+              />
+              <h4 class="benefits__desc">
+                3. Receive right in your house, hassle-free
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam
+              </p>
+            </li>
+          </ul>
+          <div class="benefits__buttons">
             <button class="register button">Register restaurant</button>
             <button class="download button">Download app</button>
           </div>
-          <div class="hero__line line"></div>
-          <ul class="hero__list">
-            <li class="hero__item">
-              <p class="hero__counts">
-                10M<span class="hero__counts_red">+</span>
+        </div> -->
+
+        <!-- <div class="line">
+          <div class="line__body"></div>
+        </div> -->
+
+        <!-- <div class="advantages container">
+          <div class="advantages__content">
+            <div class="advantages__text">
+              <h2 class="advantages__title title">
+                Learn why Deliver X is <br />
+                great for your restaurant
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam
               </p>
-              <p>Happy customers</p>
-            </li>
-            <li class="hero__item">
-              <p class="hero__counts">
-                500k<span class="hero__counts_red">+</span>
-              </p>
-              <p>Restaurants available</p>
-            </li>
-            <li class="hero__item">
-              <p class="hero__counts">
-                10M<span class="hero__counts_red">+</span>
-              </p>
-              <p>Successful deliveries</p>
-            </li>
-          </ul>
-        </div>
-      </div>
+              <ul class="advantages__list">
+                <li class="advantages__item">
+                  <img
+                    src="./images/advantages/flash.svg"
+                    alt="flash"
+                    class="advantages__img"
+                  />
+                  <h4 class="advantages__name">Fast deliveries</h4>
+                  <p>Lorem ipsum dolor sit amet consecte</p>
+                  <p class="advantages__desc">turole adipis.</p>
+                </li>
+                <li class="advantages__item">
+                  <img
+                    src="./images/advantages/person.svg"
+                    alt="person"
+                    class="advantages__img"
+                  />
+                  <h4 class="advantages__name">Certified riders</h4>
+                  <p>Lorem ipsum dolor sit amet consecte</p>
+                  <p class="advantages__desc">turole adipis.</p>
+                </li>
+                <li class="advantages__item">
+                  <img
+                    src="./images/advantages/money.svg"
+                    alt="dollar"
+                    class="advantages__img"
+                  />
+                  <h4 class="advantages__name">Instant payments</h4>
+                  <p>Lorem ipsum dolor sit amet consecte</p>
+                  <p class="advantages__desc">turole adipis.</p>
+                </li>
+                <li class="advantages__item">
+                  <img
+                    src="./images/advantages/payment.svg"
+                    alt="payment"
+                    class="advantages__img"
+                  />
+                  <h4 class="advantages__name">Low fees</h4>
+                  <p>Lorem ipsum dolor sit amet consecte</p>
+                  <p class="advantages__desc">turole adipis.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="advantages__images"></div>
+          </div>
+          <div class="advantages__buttons">
+            <button class="register button">Register restaurant</button>
+            <button class="download button">Download app</button>
+          </div>
+        </div> -->
 
-      <div class="clients container">
-        <h3 class="clients__title">
-          Trusted by 5,000+ restaurants around the world
-        </h3>
-        <ul class="clients__list">
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <img src="./images/clients/1.svg" alt="" />
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <img src="./images/clients/2.svg" alt="" />
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <img src="./images/clients/3.svg" alt="" />
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <img src="./images/clients/4.svg" alt="" />
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="line">
-        <div class="line__body"></div>
-      </div>
-
-      <div class="benefits container">
-        <div class="benefits__header">
-          <h3 class="benefits__subtitle subtitle">How it works</h3>
-          <h2 class="benefits__title title">
-            Our simple, yet efficient <br />delivery system
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
-            egestas morbi sem vulputate etiam facilisis pellentesque
-          </p>
-        </div>
-        <ul class="benefits__list">
-          <li class="benefits__item">
-            <img
-              src="./images/benefits/phone.svg"
-              alt="phone"
-              class="benefits__img"
-            />
-            <h4 class="benefits__desc">
-              1. Create a free account at Deliver X today
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-              phasellus mollis sit aliquam
-            </p>
-          </li>
-          <li class="benefits__item">
-            <img
-              src="./images/benefits/home.svg"
-              alt="home"
-              class="benefits__img"
-            />
-            <h4 class="benefits__desc">
-              2. Order from your favorite restaurant
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-              phasellus mollis sit aliquam
-            </p>
-          </li>
-          <li class="benefits__item">
-            <img
-              src="./images/benefits/deliver.svg"
-              alt="bike"
-              class="benefits__img"
-            />
-            <h4 class="benefits__desc">
-              3. Receive right in your house, hassle-free
-            </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-              phasellus mollis sit aliquam
-            </p>
-          </li>
-        </ul>
-        <div class="benefits__buttons">
-          <button class="register button">Register restaurant</button>
-          <button class="download button">Download app</button>
-        </div>
-      </div>
-
-      <div class="line">
-        <div class="line__body"></div>
-      </div>
-
-      <div class="advantages container">
-        <div class="advantages__content">
-          <div class="advantages__text">
-            <h2 class="advantages__title title">
-              Learn why Deliver X is <br />
-              great for your restaurant
-            </h2>
+        <!-- <div class="gallery container">
+          <div class="gallery__content">
+            <h3 class="gallery__title title">
+              A delicious burger is <br />
+              one tap away!
+            </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
               phasellus mollis sit aliquam sit nullam
             </p>
-            <ul class="advantages__list">
-              <li class="advantages__item">
-                <img
-                  src="./images/advantages/flash.svg"
-                  alt="flash"
-                  class="advantages__img"
-                />
-                <h4 class="advantages__name">Fast deliveries</h4>
-                <p>Lorem ipsum dolor sit amet consecte</p>
-                <p class="advantages__desc">turole adipis.</p>
-              </li>
-              <li class="advantages__item">
-                <img
-                  src="./images/advantages/person.svg"
-                  alt="person"
-                  class="advantages__img"
-                />
-                <h4 class="advantages__name">Certified riders</h4>
-                <p>Lorem ipsum dolor sit amet consecte</p>
-                <p class="advantages__desc">turole adipis.</p>
-              </li>
-              <li class="advantages__item">
-                <img
-                  src="./images/advantages/money.svg"
-                  alt="dollar"
-                  class="advantages__img"
-                />
-                <h4 class="advantages__name">Instant payments</h4>
-                <p>Lorem ipsum dolor sit amet consecte</p>
-                <p class="advantages__desc">turole adipis.</p>
-              </li>
-              <li class="advantages__item">
-                <img
-                  src="./images/advantages/payment.svg"
-                  alt="payment"
-                  class="advantages__img"
-                />
-                <h4 class="advantages__name">Low fees</h4>
-                <p>Lorem ipsum dolor sit amet consecte</p>
-                <p class="advantages__desc">turole adipis.</p>
-              </li>
-            </ul>
+            <button class="gallery__button button register">
+              Download app
+            </button>
           </div>
-          <div class="advantages__images"></div>
-        </div>
-        <div class="advantages__buttons">
-          <button class="register button">Register restaurant</button>
-          <button class="download button">Download app</button>
-        </div>
-      </div>
+          <div class="gallery__images">
+            <div class="gallery__column">
+              <img
+                src="./images/gallery/left/1.jpg"
+                alt=""
+                class="gallery__item"
+              />
+              <img
+                src="./images/gallery/left/2.jpg"
+                alt=""
+                class="gallery__item"
+              />
+              <img
+                src="./images/gallery/left/3.jpg"
+                alt=""
+                class="gallery__item"
+              />
+              <img
+                src="./images/gallery/left/4.jpg"
+                alt=""
+                class="gallery__item"
+              />
+            </div>
+            <div class="gallery__column">
+              <img
+                src="./images/gallery/right/1.jpg"
+                alt=""
+                class="gallery__item"
+              />
+              <img
+                src="./images/gallery/right/2.jpg"
+                alt=""
+                class="gallery__item"
+              />
+              <img
+                src="./images/gallery/right/3.jpg"
+                alt=""
+                class="gallery__item"
+              />
+              <img
+                src="./images/gallery/right/4.jpg"
+                alt=""
+                class="gallery__item"
+              />
+            </div>
+          </div>
+        </div> -->
 
-      <div class="gallery container">
-        <div class="gallery__content">
-          <h3 class="gallery__title title">
-            A delicious burger is <br />
-            one tap away!
+        <!-- <div class="features container">
+          <h2 class="features__subtitle subtitle">Our Features</h2>
+          <h3 class="features__title title">
+            Learn why Deliver is great for <br />
+            customers too!
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-            phasellus mollis sit aliquam sit nullam
+            Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
+            egestas morbi sem vulputate etiam facilisis pellentesque
           </p>
-          <button class="gallery__button button register">Download app</button>
-        </div>
-        <div class="gallery__images">
-          <div class="gallery__column">
-            <img
-              src="./images/gallery/left/1.jpg"
-              alt=""
-              class="gallery__item"
-            />
-            <img
-              src="./images/gallery/left/2.jpg"
-              alt=""
-              class="gallery__item"
-            />
-            <img
-              src="./images/gallery/left/3.jpg"
-              alt=""
-              class="gallery__item"
-            />
-            <img
-              src="./images/gallery/left/4.jpg"
-              alt=""
-              class="gallery__item"
-            />
-          </div>
-          <div class="gallery__column">
-            <img
-              src="./images/gallery/right/1.jpg"
-              alt=""
-              class="gallery__item"
-            />
-            <img
-              src="./images/gallery/right/2.jpg"
-              alt=""
-              class="gallery__item"
-            />
-            <img
-              src="./images/gallery/right/3.jpg"
-              alt=""
-              class="gallery__item"
-            />
-            <img
-              src="./images/gallery/right/4.jpg"
-              alt=""
-              class="gallery__item"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="features container">
-        <h2 class="features__subtitle subtitle">Our Features</h2>
-        <h3 class="features__title title">
-          Learn why Deliver is great for <br />
-          customers too!
-        </h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu
-          egestas morbi sem vulputate etiam facilisis pellentesque
-        </p>
-        <ul class="features__list">
-          <li class="features__item">
-            <img
-              src="./images/features/bike.svg"
-              alt="bike"
-              class="features__image"
-            />
-            <h4 class="features__header">Express delivery</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-              phasellus mollis sit aliquam sit nullam.
-            </p>
-          </li>
-          <li class="features__item">
-            <img
-              src="./images/features/food.svg"
-              alt="food"
-              class="features__image"
-            />
-            <h4 class="features__header">Safely delivered</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-              phasellus mollis sit aliquam sit nullam.
-            </p>
-          </li>
-          <li class="features__item">
-            <img
-              src="./images/features/labels.svg"
-              alt="labels"
-              class="features__image"
-            />
-            <h4 class="features__header">Special discounts</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-              phasellus mollis sit aliquam sit nullam.
-            </p>
-          </li>
-          <li class="features__item">
-            <img
-              src="./images/features/dishes.svg"
-              alt="dishes"
-              class="features__image"
-            />
-            <h4 class="features__header">More dishes</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-              phasellus mollis sit aliquam sit nullam.
-            </p>
-          </li>
-          <li class="features__item">
-            <img
-              src="./images/features/house.svg"
-              alt="house"
-              class="features__image"
-            />
-            <h4 class="features__header">Exclusive restaurants</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-              phasellus mollis sit aliquam sit nullam.
-            </p>
-          </li>
-          <li class="features__item">
-            <img
-              src="./images/features/extra.svg"
-              alt="extra"
-              class="features__image"
-            />
-            <h4 class="features__header">and much more!</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-              phasellus mollis sit aliquam sit nullam.
-            </p>
-          </li>
-        </ul>
-        <div class="features__buttons">
-          <button class="register button">Register restaurant</button>
-          <button class="download button">Download app</button>
-        </div>
-      </div>
-
-      <div class="gains container">
-        <ul class="gains__list">
-          <li class="gains__item">
-            <div class="gains__images">
-              <div class="gains__bg"></div>
-              <div class="gains__first"></div>
-            </div>
-            <div class="gains__content">
-              <h3 class="gains__title title">
-                Hassle-free restaurant management
-              </h3>
-              <p class="gains__text">
-                Bibendum consectetur eu quis dignissim purus quis felis urna in
-                enim elementum tellus amet ullamcorper ante in sollicitudin
-                sollicitudin pellentesque
-              </p>
-              <ul class="gains__sublist">
-                <li class="gains__subitem">
-                  <img
-                    src="./images/gains/calendar.svg"
-                    alt="calendar"
-                    class="gains__image"
-                  />
-                  <div>
-                    <h4 class="gains__header">Order management</h4>
-                    <p>
-                      Aliquam vestibulum morbi blandit cursus risus atomol
-                      ultrices proin gravida hendrerit lectusa.
-                    </p>
-                  </div>
-                </li>
-                <li class="gains__subitem">
-                  <img
-                    src="./images/gains/pos.svg"
-                    alt="POS"
-                    class="gains__image"
-                  />
-                  <div>
-                    <h4 class="gains__header">POS integration</h4>
-                    <p>
-                      Lobortis elementum nibh tellus molestie nunc nonolfu
-                      celerisque fermentum dui faucibus inomle.
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="gains__item">
-            <div class="gains__images">
-              <div class="gains__bg"></div>
-              <div class="gains__second"></div>
-            </div>
-            <div class="gains__content">
-              <h3 class="gains__title title">
-                Super convenient for customers too
-              </h3>
+          <ul class="features__list">
+            <li class="features__item">
+              <img
+                src="./images/features/bike.svg"
+                alt="bike"
+                class="features__image"
+              />
+              <h4 class="features__header">Express delivery</h4>
               <p>
-                Bibendum consectetur eu quis dignissim purus quis felis urna in
-                enim elementum tellus amet ullamcorper ante in sollicitudin
-                sollicitudin pellentesque
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
               </p>
-              <ul class="gains__sublist">
-                <li class="gains__subitem">
-                  <img
-                    src="./images/gains/cart.svg"
-                    alt="cart"
-                    class="gains__image"
-                  />
-                  <div>
-                    <h4 class="gains__header">Order from app</h4>
-                    <p>
-                      Aliquam vestibulum morbi blandit cursus risus atomol
-                      ultrices proin gravida
-                    </p>
-                  </div>
-                </li>
-                <li class="gains__subitem">
-                  <img
-                    src="./images/gains/track.svg"
-                    alt=""
-                    class="gains__image"
-                  />
-                  <div>
-                    <h4 class="gains__header">Delivery tracking</h4>
-                    <p>
-                      Lobortis elementum nibh tellus molestie nunc nonolfu
-                      celerisque fermentum dui
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="feedback container">
-        <div class="feedback__header">
-          <div class="feedback__wrapper">
-            <h2 class="feedback__title title">What your client say</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit semper
-              dalar elementum tempus hac
-            </p>
-          </div>
-          <div class="feedback__buttons">
+            </li>
+            <li class="features__item">
+              <img
+                src="./images/features/food.svg"
+                alt="food"
+                class="features__image"
+              />
+              <h4 class="features__header">Safely delivered</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </li>
+            <li class="features__item">
+              <img
+                src="./images/features/labels.svg"
+                alt="labels"
+                class="features__image"
+              />
+              <h4 class="features__header">Special discounts</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </li>
+            <li class="features__item">
+              <img
+                src="./images/features/dishes.svg"
+                alt="dishes"
+                class="features__image"
+              />
+              <h4 class="features__header">More dishes</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </li>
+            <li class="features__item">
+              <img
+                src="./images/features/house.svg"
+                alt="house"
+                class="features__image"
+              />
+              <h4 class="features__header">Exclusive restaurants</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </li>
+            <li class="features__item">
+              <img
+                src="./images/features/extra.svg"
+                alt="extra"
+                class="features__image"
+              />
+              <h4 class="features__header">and much more!</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+                phasellus mollis sit aliquam sit nullam.
+              </p>
+            </li>
+          </ul>
+          <div class="features__buttons">
             <button class="register button">Register restaurant</button>
             <button class="download button">Download app</button>
           </div>
-        </div>
-        <ul class="feedback__cards">
-          <li class="feedback__item">
-            <div class="feedback__person">
-              <div class="feedback__data">
-                <img
-                  src="./images/feedback/John Carter.jpg"
-                  alt="John Carter "
-                  class="feedback__image"
-                />
-                <div>
-                  <h4 class="feedback__name">John Carter</h4>
-                  <p class="feedback__place">Echo Park</p>
-                </div>
-              </div>
-              <div class="feedback__sign"></div>
-            </div>
-            <p class="feedback__text">
-              “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus
-              a nunc mauris scelerisque
-            </p>
-          </li>
-          <li class="feedback__item">
-            <div class="feedback__person">
-              <div class="feedback__data">
-                <img
-                  src="./images/feedback/Sophie Moore.jpg"
-                  alt="Sophie Moore"
-                  class="feedback__image"
-                />
-                <div>
-                  <h4 class="feedback__name">Sophie Moore</h4>
-                  <p class="feedback__place">Hollywood Hills</p>
-                </div>
-              </div>
-              <div class="feedback__sign"></div>
-            </div>
-            <p class="feedback__text">
-              “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus
-              a nunc mauris scelerisque
-            </p>
-          </li>
-          <li class="feedback__item">
-            <div class="feedback__person">
-              <div class="feedback__data">
-                <img
-                  src="./images/feedback/Matt Cannon.jpg"
-                  alt="Matt Cannon"
-                  class="feedback__image"
-                />
-                <div>
-                  <h4 class="feedback__name">Matt Cannon</h4>
-                  <p class="feedback__place">Melsore Avenue</p>
-                </div>
-              </div>
-              <div class="feedback__sign"></div>
-            </div>
-            <p class="feedback__text">
-              “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus
-              a nunc mauris scelerisque
-            </p>
-          </li>
-          <li class="feedback__item">
-            <div class="feedback__person">
-              <div class="feedback__data">
-                <img
-                  src="./images/feedback/Lily Woods.jpg"
-                  alt="Lily Woods"
-                  class="feedback__image"
-                />
-                <div>
-                  <h4 class="feedback__name">Lily Woods</h4>
-                  <p class="feedback__place">Melsore Avenue</p>
-                </div>
-              </div>
-              <div class="feedback__sign"></div>
-            </div>
-            <p class="feedback__text">
-              “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus
-              a nunc mauris scelerisque
-            </p>
-          </li>
-          <li class="feedback__item">
-            <div class="feedback__person">
-              <div class="feedback__data">
-                <img
-                  src="./images/feedback/Andy Smith.jpg"
-                  alt="Andy Smith"
-                  class="feedback__image"
-                />
-                <div>
-                  <h4 class="feedback__name">Andy Smith</h4>
-                  <p class="feedback__place">Koreatown</p>
-                </div>
-              </div>
-              <div class="feedback__sign"></div>
-            </div>
-            <p class="feedback__text">
-              “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus
-              a nunc mauris scelerisque
-            </p>
-          </li>
-          <li class="feedback__item">
-            <div class="feedback__person">
-              <div class="feedback__data">
-                <img
-                  src="./images/feedback/Emily Williams.jpg"
-                  alt="Emily Williams"
-                  class="feedback__image"
-                />
-                <div>
-                  <h4 class="feedback__name">Emily Williams</h4>
-                  <p class="feedback__place">Chinatown</p>
-                </div>
-              </div>
-              <div class="feedback__sign"></div>
-            </div>
-            <p class="feedback__text">
-              “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus
-              a nunc mauris scelerisque
-            </p>
-          </li>
-        </ul>
-      </div>
+        </div> -->
 
-      <div class="registration">
-        <div class="registration__content container">
-          <h2 class="registration__title title">
-            Start attracting <br />
-            more clients today!
-          </h2>
-          <p class="registration__text">
-            Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
-            phasellus mollis sit aliquam sit nullam neque ultrices.
+        <!-- <div class="gains container">
+          <ul class="gains__list">
+            <li class="gains__item">
+              <div class="gains__images">
+                <div class="gains__bg"></div>
+                <div class="gains__first"></div>
+              </div>
+              <div class="gains__content">
+                <h3 class="gains__title title">
+                  Hassle-free restaurant management
+                </h3>
+                <p class="gains__text">
+                  Bibendum consectetur eu quis dignissim purus quis felis urna
+                  in enim elementum tellus amet ullamcorper ante in sollicitudin
+                  sollicitudin pellentesque
+                </p>
+                <ul class="gains__sublist">
+                  <li class="gains__subitem">
+                    <img
+                      src="./images/gains/calendar.svg"
+                      alt="calendar"
+                      class="gains__image"
+                    />
+                    <div>
+                      <h4 class="gains__header">Order management</h4>
+                      <p>
+                        Aliquam vestibulum morbi blandit cursus risus atomol
+                        ultrices proin gravida hendrerit lectusa.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="gains__subitem">
+                    <img
+                      src="./images/gains/pos.svg"
+                      alt="POS"
+                      class="gains__image"
+                    />
+                    <div>
+                      <h4 class="gains__header">POS integration</h4>
+                      <p>
+                        Lobortis elementum nibh tellus molestie nunc nonolfu
+                        celerisque fermentum dui faucibus inomle.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gains__item">
+              <div class="gains__images">
+                <div class="gains__bg"></div>
+                <div class="gains__second"></div>
+              </div>
+              <div class="gains__content">
+                <h3 class="gains__title title">
+                  Super convenient for customers too
+                </h3>
+                <p>
+                  Bibendum consectetur eu quis dignissim purus quis felis urna
+                  in enim elementum tellus amet ullamcorper ante in sollicitudin
+                  sollicitudin pellentesque
+                </p>
+                <ul class="gains__sublist">
+                  <li class="gains__subitem">
+                    <img
+                      src="./images/gains/cart.svg"
+                      alt="cart"
+                      class="gains__image"
+                    />
+                    <div>
+                      <h4 class="gains__header">Order from app</h4>
+                      <p>
+                        Aliquam vestibulum morbi blandit cursus risus atomol
+                        ultrices proin gravida
+                      </p>
+                    </div>
+                  </li>
+                  <li class="gains__subitem">
+                    <img
+                      src="./images/gains/track.svg"
+                      alt=""
+                      class="gains__image"
+                    />
+                    <div>
+                      <h4 class="gains__header">Delivery tracking</h4>
+                      <p>
+                        Lobortis elementum nibh tellus molestie nunc nonolfu
+                        celerisque fermentum dui
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-- <div class="feedback container">
+          <div class="feedback__header">
+            <div class="feedback__wrapper">
+              <h2 class="feedback__title title">What your client say</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit semper
+                dalar elementum tempus hac
+              </p>
+            </div>
+            <div class="feedback__buttons">
+              <button class="register button">Register restaurant</button>
+              <button class="download button">Download app</button>
+            </div>
+          </div>
+          <ul class="feedback__cards">
+            <li class="feedback__item">
+              <div class="feedback__person">
+                <div class="feedback__data">
+                  <img
+                    src="./images/feedback/John Carter.jpg"
+                    alt="John Carter "
+                    class="feedback__image"
+                  />
+                  <div>
+                    <h4 class="feedback__name">John Carter</h4>
+                    <p class="feedback__place">Echo Park</p>
+                  </div>
+                </div>
+                <div class="feedback__sign"></div>
+              </div>
+              <p class="feedback__text">
+                “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                lectus a nunc mauris scelerisque
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__person">
+                <div class="feedback__data">
+                  <img
+                    src="./images/feedback/Sophie Moore.jpg"
+                    alt="Sophie Moore"
+                    class="feedback__image"
+                  />
+                  <div>
+                    <h4 class="feedback__name">Sophie Moore</h4>
+                    <p class="feedback__place">Hollywood Hills</p>
+                  </div>
+                </div>
+                <div class="feedback__sign"></div>
+              </div>
+              <p class="feedback__text">
+                “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                lectus a nunc mauris scelerisque
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__person">
+                <div class="feedback__data">
+                  <img
+                    src="./images/feedback/Matt Cannon.jpg"
+                    alt="Matt Cannon"
+                    class="feedback__image"
+                  />
+                  <div>
+                    <h4 class="feedback__name">Matt Cannon</h4>
+                    <p class="feedback__place">Melsore Avenue</p>
+                  </div>
+                </div>
+                <div class="feedback__sign"></div>
+              </div>
+              <p class="feedback__text">
+                “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                lectus a nunc mauris scelerisque
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__person">
+                <div class="feedback__data">
+                  <img
+                    src="./images/feedback/Lily Woods.jpg"
+                    alt="Lily Woods"
+                    class="feedback__image"
+                  />
+                  <div>
+                    <h4 class="feedback__name">Lily Woods</h4>
+                    <p class="feedback__place">Melsore Avenue</p>
+                  </div>
+                </div>
+                <div class="feedback__sign"></div>
+              </div>
+              <p class="feedback__text">
+                “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                lectus a nunc mauris scelerisque
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__person">
+                <div class="feedback__data">
+                  <img
+                    src="./images/feedback/Andy Smith.jpg"
+                    alt="Andy Smith"
+                    class="feedback__image"
+                  />
+                  <div>
+                    <h4 class="feedback__name">Andy Smith</h4>
+                    <p class="feedback__place">Koreatown</p>
+                  </div>
+                </div>
+                <div class="feedback__sign"></div>
+              </div>
+              <p class="feedback__text">
+                “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                lectus a nunc mauris scelerisque
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__person">
+                <div class="feedback__data">
+                  <img
+                    src="./images/feedback/Emily Williams.jpg"
+                    alt="Emily Williams"
+                    class="feedback__image"
+                  />
+                  <div>
+                    <h4 class="feedback__name">Emily Williams</h4>
+                    <p class="feedback__place">Chinatown</p>
+                  </div>
+                </div>
+                <div class="feedback__sign"></div>
+              </div>
+              <p class="feedback__text">
+                “Lorem ipsum dolor sit ametolil col consectetur adipiscing
+                lectus a nunc mauris scelerisque
+              </p>
+            </li>
+          </ul>
+        </div> -->
+
+        <!-- <div class="registration">
+          <div class="registration__content container">
+            <h2 class="registration__title title">
+              Start attracting <br />
+              more clients today!
+            </h2>
+            <p class="registration__text">
+              Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
+              phasellus mollis sit aliquam sit nullam neque ultrices.
+            </p>
+            <button class="registration__button register button">
+              Register restaurant
+            </button>
+          </div>
+          <div class="registration__bg1"></div>
+          <div class="registration__bg2"></div>
+        </div> -->
+      </main>
+
+      <footer class="footer">
+        <!-- <div class="footer__info">
+          <div class="footer__logo">
+            <img src="./images/header/logo.svg" alt="logo" />
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
+              eiusmod tempor incididunt ut.
+            </p>
+          </div>
+          <div class="footer__buttons">
+            <button class="footer__button register button">
+              Download for iOS
+            </button>
+            <button class="footer__button footer__btn register button">
+              Download for Android
+            </button>
+          </div>
+        </div>
+        <div class="line">
+          <div class="line__body"></div>
+        </div>
+        <div class="footer__refers">
+          <div class="footer__menu">
+            <h4 class="footer__title">Menu</h4>
+            <ul class="footer__list footer__list-flex">
+              <div class="footer__wrapper">
+                <li class="footer__item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">About</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Contact</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Blog posts</a>
+                </li>
+              </div>
+              <div class="footer__wrapper">
+                <li class="footer__item">
+                  <a href="#">Plans</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Plan single</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#">Register</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="footer__pages">
+            <h4 class="footer__title">Utility pages</h4>
+            <ul class="footer__list">
+              <li class="footer__item">Start here</li>
+              <li class="footer__item">Styleguide</li>
+              <li class="footer__item">Password protected</li>
+              <li class="footer__item">404 Not found</li>
+              <li class="footer__item">Licenses</li>
+              <li class="footer__item">Changelog</li>
+            </ul>
+          </div>
+          <div class="footer__available">
+            <h4 class="footer__title">Available in</h4>
+            <ul class="footer__grid">
+              <li class="footer__place">
+                <img
+                  src="./images/footer/SanFrancisco.svg"
+                  alt="San Francisco, CA"
+                />
+                <span>San Francisco, CA</span>
+              </li>
+              <li class="footer__place">
+                <img src="./images/footer/NY.svg" alt="New York, NY" />
+                <span>New York, NY</span>
+              </li>
+              <li class="footer__place">
+                <img
+                  src="./images/footer/LosAngeles.svg"
+                  alt="Los Angeles, CA"
+                />
+                <span>Los Angeles, CA</span>
+              </li>
+
+              <li class="footer__place">
+                <img src="./images/footer/Seatle.svg" alt="Seattle, WA" />
+                <span>Seattle, WA</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="line">
+          <div class="line__body line__body-grey"></div>
+        </div>
+        <div class="footer__licence">
+          <p>
+            <span class="footer__text"
+              >Copyright © Deliver X | Designed by</span
+            >
+            <span class="footer__text footer__text-red">BRIX Templates</span>
+            <span class="footer__text">- Powered by</span>
+            <span class="footer__text footer__text-red">Webflow</span>
           </p>
-          <button class="registration__button register button">
-            Register restaurant
-          </button>
-        </div>
-        <div class="registration__bg1"></div>
-        <div class="registration__bg2"></div>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__info">
-        <div class="footer__logo">
-          <img src="./images/header/logo.svg" alt="logo" />
-          <p class="footer__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-            eiusmod tempor incididunt ut.
-          </p>
-        </div>
-        <div class="footer__buttons">
-          <button class="footer__button register button">
-            Download for iOS
-          </button>
-          <button class="footer__button footer__btn register button">
-            Download for Android
-          </button>
-        </div>
-      </div>
-      <div class="line">
-        <div class="line__body"></div>
-      </div>
-      <div class="footer__refers">
-        <div class="footer__menu">
-          <h4 class="footer__title">Menu</h4>
-          <ul class="footer__list footer__list-flex">
-            <div class="footer__wrapper">
-              <li class="footer__item">
-                <a href="#">Home</a>
-              </li>
-              <li class="footer__item">
-                <a href="#">About</a>
-              </li>
-              <li class="footer__item">
-                <a href="#">Contact</a>
-              </li>
-              <li class="footer__item">
-                <a href="#">Blog</a>
-              </li>
-              <li class="footer__item">
-                <a href="#">Blog posts</a>
-              </li>
-            </div>
-            <div class="footer__wrapper">
-              <li class="footer__item">
-                <a href="#">Plans</a>
-              </li>
-              <li class="footer__item">
-                <a href="#">Plan single</a>
-              </li>
-              <li class="footer__item">
-                <a href="#">Register</a>
-              </li>
-            </div>
-          </ul>
-        </div>
-        <div class="footer__pages">
-          <h4 class="footer__title">Utility pages</h4>
-          <ul class="footer__list">
-            <li class="footer__item">Start here</li>
-            <li class="footer__item">Styleguide</li>
-            <li class="footer__item">Password protected</li>
-            <li class="footer__item">404 Not found</li>
-            <li class="footer__item">Licenses</li>
-            <li class="footer__item">Changelog</li>
-          </ul>
-        </div>
-        <div class="footer__available">
-          <h4 class="footer__title">Available in</h4>
-          <ul class="footer__grid">
-            <li class="footer__place">
-              <img
-                src="./images/footer/SanFrancisco.svg"
-                alt="San Francisco, CA"
-              />
-              <span>San Francisco, CA</span>
-            </li>
-            <li class="footer__place">
-              <img src="./images/footer/NY.svg" alt="New York, NY" />
-              <span>New York, NY</span>
-            </li>
-            <li class="footer__place">
-              <img src="./images/footer/LosAngeles.svg" alt="Los Angeles, CA" />
-              <span>Los Angeles, CA</span>
-            </li>
-
-            <li class="footer__place">
-              <img src="./images/footer/Seatle.svg" alt="Seattle, WA" />
-              <span>Seattle, WA</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="line">
-        <div class="line__body line__body-grey"></div>
-      </div>
-      <div class="footer__licence">
-        <p>
-          <span class="footer__text">Copyright © Deliver X | Designed by</span>
-          <span class="footer__text footer__text-red">BRIX Templates</span>
-          <span class="footer__text">- Powered by</span>
-          <span class="footer__text footer__text-red">Webflow</span>
-        </p>
-      </div>
-    </footer>
+        </div> -->
+      </footer>
+    </div>
   </body>
+
+  <script src="./js/index.js"></script>
 </html>
